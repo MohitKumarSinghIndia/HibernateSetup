@@ -89,7 +89,7 @@ Transaction transaction = session.beginTransaction();
 User user = new User();
 user.setName("Mohit");
 user.setEmail("mohit@example.com");
-session.save(user);
+session.persist(user);
 transaction.commit();
 session.close();
 ```
